@@ -16,7 +16,7 @@ setup(
     version="0.1.0",
     author="Your Name",
     author_email="your.email@example.com",
-    description="A lightweight system-wide filesystem monitor with real-time event tracking and minimal resource usage",
+    description="Cross-platform filesystem monitor with intelligent event classification, GUI interface, and resource-optimized real-time tracking",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/filepulse",
