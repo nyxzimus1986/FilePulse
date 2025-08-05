@@ -13,16 +13,19 @@
 
 1. **Download**: Get the latest release from [GitHub Releases](https://github.com/yourusername/filepulse/releases)
 2. **Extract**: Unzip the downloaded file to any folder on your computer
-3. **Run Immediately**: 
-   - **GUI Version**: Double-click `FilePulse.exe` for the graphical interface
-   - **CLI Version**: Open Command Prompt and run `filepulse-cli.exe --help`
+3. **Choose Your Version**: 
+   - **GUI (No Console)**: Double-click `FilePulse.exe` - opens silently with GUI only
+   - **GUI (With Console)**: Run `FilePulse-Console.exe` - shows debug info in console
+   - **CLI**: Run `filepulse-cli.exe` from Command Prompt for command-line interface
 
 **✅ Zero Dependencies**: No Python, pip, or any other software required!  
 **✅ Fully Portable**: Copy the .exe files to any Windows machine and run instantly  
 **✅ Small Size**: ~7-11 MB per executable - very lightweight  
+**✅ Multiple Versions**: Choose the version that works best for you
 
 **What you get:**
-- `FilePulse.exe` - Complete GUI application (~11 MB)
+- `FilePulse.exe` - GUI without console window (~11 MB) - **Recommended for most users**
+- `FilePulse-Console.exe` - GUI with console for debugging (~11 MB)  
 - `filepulse-cli.exe` - Command-line interface (~7 MB)
 - Built-in configuration files and documentation
 
