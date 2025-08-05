@@ -9,8 +9,21 @@ import os
 from pathlib import Path
 import logging
 
-from .config import Config
-from .monitor import FileSystemMonitor
+# Fix imports for standalone executables
+try:
+    from .config import Config
+    from .monitor import FileSystemMonitor
+except ImportError:
+    # Fallback for standalone executables
+    try:
+        from filepulse.config import Config
+        from filepulse.monitor import FileSystemMonitor
+    except ImportError:
+        # Last resort - add current directory to path
+        current_dir = Path(__file__).parent
+        sys.path.insert(0, str(current_dir.parent))
+        from filepulse.config import Config
+        from filepulse.monitor import FileSystemMonitor
 
 
 def setup_logging(level='INFO'):
