@@ -16,10 +16,26 @@ import json
 # Add current directory to path for imports
 sys.path.insert(0, '.')
 
-from filepulse.config import Config
-from filepulse.monitor import FileSystemMonitor
-from filepulse.events import FileSystemEvent
-from filepulse.output import create_statistics_collector
+try:
+    from .config import Config
+    from .monitor import FileSystemMonitor
+    from .events import FileSystemEvent
+    from .output import create_statistics_collector
+except ImportError:
+    # Fallback for standalone executables
+    try:
+        from filepulse.config import Config
+        from filepulse.monitor import FileSystemMonitor
+        from filepulse.events import FileSystemEvent
+        from filepulse.output import create_statistics_collector
+    except ImportError:
+        # Last resort - direct imports
+        current_dir = Path(__file__).parent
+        sys.path.insert(0, str(current_dir.parent))
+        from filepulse.config import Config
+        from filepulse.monitor import FileSystemMonitor
+        from filepulse.events import FileSystemEvent
+        from filepulse.output import create_statistics_collector
 
 
 class FilePulseGUI:

@@ -1,0 +1,11 @@
+{
+  "name": "FilePulse Dark Mode",
+  "description": "Dark theme icon for FilePulse",
+  "bg_color": "#2c3e50",
+  "folder_color": "#34495e",
+  "pulse_color": "#3498db",
+  "text_color": "#ffffff",
+  "text": "FP",
+  "style": "Modern",
+  "size": 256
+}

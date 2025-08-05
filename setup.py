@@ -16,7 +16,7 @@ setup(
     version="0.1.0",
     author="Your Name",
     author_email="your.email@example.com",
-    description="Cross-platform filesystem monitor with intelligent event classification, GUI interface, and resource-optimized real-time tracking",
+    description="Cross-platform filesystem monitor with intelligent event classification, GUI interface, resource-optimized real-time tracking, and professional design tools",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/filepulse",
@@ -24,6 +24,7 @@ setup(
         "Bug Tracker": "https://github.com/yourusername/filepulse/issues",
         "Source Code": "https://github.com/yourusername/filepulse",
         "Documentation": "https://github.com/yourusername/filepulse#readme",
+        "Design Tools": "https://github.com/yourusername/filepulse/tree/main/tools",
     },
     packages=find_packages(),
     classifiers=[
@@ -49,7 +50,7 @@ setup(
         "Environment :: X11 Applications",
     ],
     python_requires=">=3.8",
-    keywords="filesystem monitor watchdog events real-time tracking gui cli",
+    keywords="filesystem monitor watchdog events real-time tracking gui cli icon splash design tools",
     install_requires=requirements,
     extras_require={
         "dev": [
@@ -60,15 +61,20 @@ setup(
             "mypy",
         ],
         "gui": [],  # GUI dependencies are already in main requirements
+        "design": ["Pillow>=8.0.0"],  # Design tools dependencies
     },
     entry_points={
         "console_scripts": [
             "filepulse=filepulse.cli:main",
             "filepulse-gui=filepulse.gui:main",
+            "filepulse-icon-generator=tools.icon_generator:main",
+            "filepulse-splash-generator=tools.splash_generator:main",
         ],
     },
     include_package_data=True,
     package_data={
         "filepulse": ["config/*.yaml", "config/*.json"],
+        "tools": ["*.py", "README.md"],
+        "assets": ["**/*", "presets/*.json", "README.md"],
     },
 )

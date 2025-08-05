@@ -1,0 +1,20 @@
+{
+  "name": "FilePulse Default Splash",
+  "description": "Default splash screen for FilePulse",
+  "width": 600,
+  "height": 400,
+  "bg_gradient_start": "#2c3e50",
+  "bg_gradient_end": "#3498db",
+  "logo_color": "#ffffff",
+  "title_color": "#ffffff",
+  "subtitle_color": "#bdc3c7",
+  "progress_color": "#3498db",
+  "progress_bg_color": "#34495e",
+  "title_text": "FilePulse",
+  "subtitle_text": "Real-time Filesystem Monitor",
+  "loading_text": "Loading...",
+  "enable_animations": true,
+  "animation_style": "Pulse",
+  "show_progress_bar": true,
+  "show_logo": true
+}

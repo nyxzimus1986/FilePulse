@@ -84,6 +84,42 @@ python launch_gui.py           # Launch GUI application
 gui.bat                        # Windows batch launcher for GUI
 ```
 
+## 🎨 **Design Tools**
+
+FilePulse includes professional design tools for creating custom icons and splash screens:
+
+### Icon Generator
+- **Custom Image Support**: Load your own PNG, JPG, or other image files
+- **Multiple Styles**: Modern, Classic, Minimal, and 3D icon styles
+- **Image Controls**: Adjust opacity (0-100%) and scale (10-200%)
+- **Color Themes**: Built-in presets (Blue, Green, Orange, Purple, Dark)
+- **Text Overlays**: Add custom text with automatic outline
+- **Export Options**: PNG or ICO formats in multiple sizes
+
+### Splash Screen Generator  
+- **Custom Backgrounds**: Load high-resolution background images
+- **Image Effects**: Opacity, blur (0-20), and scale (50-200%) controls
+- **Gradient Overlays**: Blend custom images with color gradients
+- **Animation Options**: Pulse, Fade, Slide, Rotate, Scale effects
+- **Code Export**: Generate standalone Python splash screen code
+- **Theme Presets**: Professional color combinations
+
+### Quick Start Design Tools:
+```bash
+# Launch icon generator
+python tools/icon_generator.py
+run-icon-generator.bat          # Windows
+
+# Launch splash screen generator  
+python tools/splash_generator.py
+run-splash-generator.bat        # Windows
+
+# Create sample images for testing
+python demo/create_sample_images.py
+```
+
+Try the demo images in the `demo/` folder to test custom image loading!
+
 ### Configuration
 
 Create a configuration file to customize monitoring behavior:

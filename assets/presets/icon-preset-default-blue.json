@@ -1,0 +1,11 @@
+{
+  "name": "FilePulse Default Blue",
+  "description": "Default blue theme icon for FilePulse",
+  "bg_color": "#3498db",
+  "folder_color": "#2980b9",
+  "pulse_color": "#e74c3c",
+  "text_color": "#ffffff",
+  "text": "FP",
+  "style": "Modern",
+  "size": 256
+}

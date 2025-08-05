@@ -1,0 +1,20 @@
+{
+  "name": "FilePulse Professional Dark",
+  "description": "Professional dark theme splash screen",
+  "width": 800,
+  "height": 600,
+  "bg_gradient_start": "#1a1a1a",
+  "bg_gradient_end": "#2d3748",
+  "logo_color": "#63b3ed",
+  "title_color": "#ffffff",
+  "subtitle_color": "#a0aec0",
+  "progress_color": "#63b3ed",
+  "progress_bg_color": "#4a5568",
+  "title_text": "FilePulse Pro",
+  "subtitle_text": "Professional Filesystem Monitoring Suite",
+  "loading_text": "Initializing system components...",
+  "enable_animations": true,
+  "animation_style": "Fade",
+  "show_progress_bar": true,
+  "show_logo": true
+}

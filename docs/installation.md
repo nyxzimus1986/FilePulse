@@ -14,20 +14,25 @@
 1. **Download**: Get the latest release from [GitHub Releases](https://github.com/yourusername/filepulse/releases)
 2. **Extract**: Unzip the downloaded file to any folder on your computer
 3. **Choose Your Version**: 
-   - **GUI (No Console)**: Double-click `FilePulse.exe` - opens silently with GUI only
-   - **GUI (With Console)**: Run `FilePulse-Console.exe` - shows debug info in console
-   - **CLI**: Run `filepulse-cli.exe` from Command Prompt for command-line interface
+   - **FilePulse.exe** - Main GUI with professional splash screen ⭐ **RECOMMENDED**
+   - **FilePulse-Simple.exe** - Simple GUI without splash screen
+   - **filepulse-cli.exe** - Command-line interface for automation
 
 **✅ Zero Dependencies**: No Python, pip, or any other software required!  
+**✅ Professional Experience**: Beautiful splash screen with loading animation  
 **✅ Fully Portable**: Copy the .exe files to any Windows machine and run instantly  
 **✅ Small Size**: ~7-11 MB per executable - very lightweight  
-**✅ Multiple Versions**: Choose the version that works best for you
 
 **What you get:**
-- `FilePulse.exe` - GUI without console window (~11 MB) - **Recommended for most users**
-- `FilePulse-Console.exe` - GUI with console for debugging (~11 MB)  
-- `filepulse-cli.exe` - Command-line interface (~7 MB)
+- `FilePulse.exe` - Premium GUI with splash screen (~11 MB) - **Best for end users**
+- `FilePulse-Simple.exe` - Basic GUI without splash (~11 MB) - **Fallback option** 
+- `filepulse-cli.exe` - Command-line interface (~7 MB) - **For automation**
 - Built-in configuration files and documentation
+
+**🎨 New Features:**
+- **Custom Splash Screen**: Professional loading screen with animations
+- **Smooth Startup**: Clean application loading experience  
+- **Error Handling**: Detailed error logging and user-friendly messages
 
 ### From PyPI (Python Required)
 
