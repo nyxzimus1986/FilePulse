@@ -1,0 +1,76 @@
+# Default FilePulse Configuration
+
+monitoring:
+  # Paths to monitor
+  paths:
+    - "."
+  
+  # Events to monitor: created, modified, deleted, moved
+  events:
+    - created
+    - modified
+    - deleted
+    - moved
+  
+  # Monitor subdirectories recursively
+  recursive: true
+  
+  # Directories to ignore during monitoring
+  ignore_directories:
+    - ".git"
+    - "__pycache__"
+    - "node_modules"
+    - ".vscode"
+    - ".idea"
+    - "venv"
+    - ".env"
+  
+  # File filtering options
+  filters:
+    # Include only files matching these patterns (empty = include all)
+    include_patterns: []
+    
+    # Exclude files matching these patterns
+    exclude_patterns:
+      - "*.tmp"
+      - "*.swp"
+      - "*.log~"
+      - ".DS_Store"
+      - "Thumbs.db"
+      - "*.pyc"
+      - "*.pyo"
+    
+    # File size limits (in bytes, null = no limit)
+    min_file_size: 0
+    max_file_size: null
+
+# Output configuration
+output:
+  # Console output
+  console: true
+  console_format: "simple"  # simple, detailed, json
+  
+  # File logging
+  log_file: null  # Set to file path to enable
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  
+  # JSON output to file
+  json_output: false
+  json_file: "filepulse_events.jsonl"
+  
+  # Timestamp format
+  timestamp_format: "%Y-%m-%d %H:%M:%S"
+
+# Performance settings
+performance:
+  # Event batching to reduce output noise
+  batch_events: true
+  batch_timeout: 0.5  # seconds
+  max_events_per_batch: 100
+  
+  # Resource limits
+  memory_limit_mb: 50
+  cpu_throttle: false
+  
+  # Rate limiting
+  max_events_per_second: 1000
